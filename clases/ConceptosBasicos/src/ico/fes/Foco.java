@@ -47,4 +47,7 @@ public class Foco {
         this.tipo = tipo;
     }
 
+    public String toString() {
+        return "Foco{" + "color=" + color + ", tipo=" + tipo + ", tamano=" + tanano + '}';
+    }
 }
