@@ -1,10 +1,9 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
 package conceptosbasicos;
 
+import ico.fes.Alumno;
 import ico.fes.Automovil;
+
+import ico.fes.Persona;
 
 import ico.fes.Silla;
 
@@ -32,6 +31,16 @@ public class ConceptosBasicos {
 
         Automovil miAkura = new Automovil("Akura", "NSX", 2013, Color.GRAY);
         System.out.println(miAkura);
+
+        Persona per1 = new Persona();
+        //per1.edad = 200000; <- No se permite por cuestiones de seguridad
+        per1.setEdad(22);
+        System.out.println(per1);
+
+        Alumno al = new Alumno();
+        al.setNombre("José");
+        al.setNumeroCuenta("011313313");
+        System.out.println(al);
 
     }
 
