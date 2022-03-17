@@ -22,6 +22,12 @@ public class Computadora {
     private Procesador cpu;   //<- Implementación de la composición del procesador en la computadora.
 
     public Computadora() {
+
+        pantalla = new Monitor();
+        raton = new Mouse();
+        teclado = new Teclado();
+        cpu = new Procesador();
+
     }
 
     public Computadora(String marca, String modelo, Monitor pantalla, Mouse raton, Teclado teclado, Procesador cpu) {
@@ -83,9 +89,20 @@ public class Computadora {
 
     @Override
     public String toString() {
+
+        /*
+        String estado = "Marca: " + this.marca + "\n";
+        estado += "Modelo: " + this.modelo + "\n";
+        estado += "Ratón: Marca: " + this.raton.getMarca()
+                + ", Tipo: " + this.raton.getTipo() + "\n";
+
+        return estado;
+         */
+
         return "Computadora{" + "marca=" + marca + ", modelo=" + modelo
-                + ", pantalla=" + pantalla + ", raton=" + raton + ", teclado="
-                + teclado + ", cpu=" + cpu.toString() + '}';
+                + ", pantalla=" + pantalla + ", raton=" + raton
+                + ", teclado=" + teclado + ", cpu=" + cpu.toString() + '}';
+
     }
 
 }
