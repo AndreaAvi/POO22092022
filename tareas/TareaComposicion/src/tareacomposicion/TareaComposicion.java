@@ -9,10 +9,10 @@ package tareacomposicion;
 import tareacomposicion.componentes.libro.Autor;
 import tareacomposicion.componentes.libro.Editorial;
 import tareacomposicion.libro.Libro;
-import tareacomposicion.libro.componentes.pelicula.Actor;
-import tareacomposicion.libro.componentes.pelicula.Director;
-import tareacomposicion.libro.componentes.pelicula.Productora;
-import tareacomposicion.libro.pelicula.Pelicula;
+import tareacomposicion.componentes.pelicula.Actor;
+import tareacomposicion.componentes.pelicula.Director;
+import tareacomposicion.componentes.pelicula.Productora;
+import tareacomposicion.pelicula.Pelicula;
 
 public class TareaComposicion {
 

@@ -4,7 +4,7 @@ Fecha de creación:  19/03/2022
 Propósito: Crear la clase Productora con al menos dos atributos y un método. 
 Tarea: Composición
  */
-package tareacomposicion.libro.componentes.pelicula;
+package tareacomposicion.componentes.pelicula;
 
 public class Productora {
     

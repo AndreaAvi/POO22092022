@@ -4,11 +4,11 @@ Fecha de creación:  19/03/2022
 Propósito: Crear la clase Pelicula, compuesta de las clases Director, Actor y Productora. 
 Tarea: Composición
  */
-package tareacomposicion.libro.pelicula;
+package tareacomposicion.pelicula;
 
-import tareacomposicion.libro.componentes.pelicula.Actor;
-import tareacomposicion.libro.componentes.pelicula.Director;
-import tareacomposicion.libro.componentes.pelicula.Productora;
+import tareacomposicion.componentes.pelicula.Actor;
+import tareacomposicion.componentes.pelicula.Director;
+import tareacomposicion.componentes.pelicula.Productora;
 
 public class Pelicula {
 
