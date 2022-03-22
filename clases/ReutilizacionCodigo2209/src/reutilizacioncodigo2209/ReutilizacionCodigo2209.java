@@ -2,6 +2,7 @@
 Profesor: Hernandez Cabrera Jesús
 Autora: Andrea Marcela Cáceres Avitia (Código de clase POO2209 2022-II)
 Fecha de creación:  15/03/2022
+Fecha de última modificación:  22/03/2022
 Propósito: Código de clase 15.03.2022. 
 Reutilización de código desde la API de Java
  */
@@ -13,6 +14,9 @@ import ico.fes.componentes.Mouse;
 import ico.fes.componentes.Procesador;
 import ico.fes.componentes.Teclado;
 import ico.fes.herencia.Alumno;
+import ico.fes.herencia.Servidor;
+import ico.fes.herencia.polimorfismo.Animal;
+import ico.fes.herencia.polimorfismo.Perro;
 import javax.swing.JFrame;
 
 public class ReutilizacionCodigo2209 {
@@ -63,7 +67,36 @@ public class ReutilizacionCodigo2209 {
 
         Alumno alu2 = new Alumno("12345678", "ICO", "José Pérez", 19);
         System.out.println(alu2);
-
+        
+        
+        alu1.setNumeroCuenta("23232323");
+        alu1.setEdad(19);
+        System.out.println(alu1);
+        
+        
+        System.out.println("---------------Composición y Herencia en la misma clase-----------------");
+        Servidor server = new Servidor();
+        System.out.println(server);
+        
+        server.setNumeroTarjetasRed(2);
+        System.out.println(server);
+        
+        server.setMarca("HP");
+        System.out.println( server );
+        
+        server.setRaton( new Mouse("LG", "Óptico"));
+        System.out.println(server);
+        
+        server.getRaton().setMarca("Logitech");
+         System.out.println(server);
+         
+         System.out.println("----------Ejemplo polimorfismo-----------");
+         
+         Perro dog = new Perro("Bull dog", "5 estrellas", 4);
+         Animal animal1 = new Animal(4);
+         dog.emitirSonido();
+         animal1.emitirSonido();
+         
     }
 
 }
