@@ -41,4 +41,5 @@ public class Monitor {
     public String toString() {
         return "Monitor{" + "marca=" + marca + ", pulgadas=" + pulgadas + '}';
     }
+    
 }
