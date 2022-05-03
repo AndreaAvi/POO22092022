@@ -3,10 +3,14 @@ Profesor: Hernández Cabrera Jesús
 Autora: Andrea Marcela Cáceres Avitia (Código de clase POO2209 2022-II)
 Fecha de creación:  28/04/2022
 Propósito: Código de clase 28/04/2022_Excepciones.
+Y de clase 03/05/2022
  */
 package javabasico2209parte2;
 
 import ico.fes.Aritmetica;
+import ico.fes.Circulo;
+import ico.fes.Cuadrado;
+import ico.fes.herencia.EstudianteDeportistaArtista;
 import java.util.ArrayList;
 import java.util.InputMismatchException;
 
@@ -63,6 +67,25 @@ public class JavaBasico2209Parte2 {
             System.out.println("Error de aritmética");
         }
         System.out.println("Fin del programa");
+        
+        System.out.println("----------Comienza interfaces-----------");
+        
+        Cuadrado cuad = new Cuadrado(5.0f);
+        Circulo circ = new Circulo(4.5f);
+        
+        System.out.println("Área del cuadrado es: " + cuad.calcularArea());
+        System.out.println("Área del círculo es: " + circ.calcularArea());
+        
+        System.out.println("-----------------------");
+        EstudianteDeportistaArtista eda = new EstudianteDeportistaArtista();
+        eda.setNombre("Diana");
+        eda.setCarrera("ICO");
+        eda.setDisciplinaDeportiva("Fútbol");
+        eda.setGeneroArtistico("Fotografía, Estampa, Dibujo");
+        eda.comer();
+        eda.ensayar();
+        eda.entrenar();
+        System.out.println(eda);
 
     }
 
