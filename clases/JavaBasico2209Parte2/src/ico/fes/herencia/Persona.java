@@ -3,6 +3,7 @@ Profesor: Hernández Cabrera Jesús
 Autora: Andrea Marcela Cáceres Avitia (Código de clase POO2209 2022-II)
 Fecha de creación:  03/05/2022
 Propósito: Código de clase 03/05/2022
+Último cambio: 19/05/2022-> Se modificó el To String
 Interfaces \^o^/ 
  */
 package ico.fes.herencia;
@@ -37,7 +38,7 @@ public class Persona {
 
     @Override
     public String toString() {
-        return "Persona{" + "nombre=" + nombre + ", edad=" + edad + '}';
+        return   nombre + ", " + edad ;
     }
     
     public void comer(){
