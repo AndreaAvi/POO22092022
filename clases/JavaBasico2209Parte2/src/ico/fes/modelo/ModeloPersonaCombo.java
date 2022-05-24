@@ -2,7 +2,7 @@
 Profesor: Hernández Cabrera Jesús
 Autora: Andrea Marcela Cáceres Avitia (Código de clase POO2209 2022-II)
 Fecha de creación:  19/05/2022
-Propósito: Código de clase 19/05/2022
+Propósito: Código de clase 19/05/2022, 24/05/2022
 Interfaces gráficas con swing (∩^o^)⊃━☆
 Arquitectura MVC
  */
@@ -75,5 +75,7 @@ public class ModeloPersonaCombo implements ComboBoxModel<Persona>{
         datos.add(new Persona("Diana", 22));
     }
     
-    
+    public void agregarPersona (Persona p){
+        datos.add(p);
+    }
 }
